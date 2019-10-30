@@ -1,0 +1,14 @@
+{
+  "name": "constructor-word-guess",
+  "version": "1.0.0",
+  "description": "CLI word guess game",
+  "main": "index.js",
+  "scripts": {
+    "test": "''"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
+}
