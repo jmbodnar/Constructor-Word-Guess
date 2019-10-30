@@ -9,9 +9,7 @@ class Letter {
   }
 
   guess(value) {
-    if (!this.guessed) {
-      this.guessed = value === this.letter;
-    }
+    this.guessed = this.guessed ? this.guessed : value === this.letter;
   }
 }
 
