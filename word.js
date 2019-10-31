@@ -1,7 +1,7 @@
 let { Letter } = require('./letters');
 
 class Word {
-  constructor(word) {
+  constructor(word, done = false) {
     this.word = word.split('').map(letter => {
       return new Letter(letter);
     });
@@ -13,6 +13,12 @@ class Word {
         return letter.toString();
       })
       .join(' ');
+  }
+
+  checkIfDone() {
+    let string = this.toString();
+    if (string.includes('_')) return false;
+    return true;
   }
 
   checkGuess(character) {
